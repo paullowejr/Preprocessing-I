@@ -4,6 +4,7 @@
    License: none (public domain)
 */
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,12 +49,79 @@ table {
 	border-spacing: 0;
 }
 
+//Google Font
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap');
+
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 62.5%;
 }
 
 html, body {
     height: 100%;
 }
+
+//variables
+@heading-font: 'Rakkas', cursive;
+@text-font: 'Muli', sans-serif;
+@accent-color: white;
+@title-color: #CC7150;
+
+//mixins
+
+
+//styles
+
+h1 {
+	font-family: @heading-font;
+	color: white;
+	font-size: 5rem;
+	text-align: center;
+}
+
+.titletop{
+	background-color: @title-color;
+	padding: 3%;
+}
+
+.developer{
+	font-family: @text-font;
+	color: white;
+}
+
+.tophead{
+	display: flex;
+	justify-content: center;
+}
+
+nav{
+	background-color: @title-color;
+	padding: 2%;
+	width: 100%;
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+
+}
+
+nav a {
+	font-family: @text-font;
+	color: white;
+	text-decoration: none;
+	padding: 2%;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
 
