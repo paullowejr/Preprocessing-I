@@ -70,51 +70,154 @@ html, body {
 @title-color: #CC7150;
 
 //mixins
+.center(){
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	justify-content: space-between;
+	margin-left: 2%;
+}
+
+.mobilelist(){
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-between;
+	margin-left: 2%;
+	flex-direction: column;
+}
+
+.mobileheadfoot(){
+	@media(max-width: 450px){
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		flex-direction: column;
+	}
+}
 
 
 //styles
 
-h1 {
+img{
+	max-width: 100%
+}
+
+section{
+	margin-top: 2%;
+}
+
+p{
+	font-family: @text-font;
+	font-size: 1.5rem;
+}
+
+li{
+	font-family: @text-font;
+	font-size: 1rem;
+
+}
+
+h1{
 	font-family: @heading-font;
 	color: white;
 	font-size: 5rem;
 	text-align: center;
 }
 
-.titletop{
-	background-color: @title-color;
-	padding: 3%;
+h2{
+	font-family: @heading-font;
+	font-size: 2rem;
 }
-
-.developer{
-	font-family: @text-font;
-	color: white;
-}
-
-.tophead{
-	display: flex;
-	justify-content: center;
-}
-
-nav{
-	background-color: @title-color;
-	padding: 2%;
-	width: 100%;
-}
-
-nav{
+	
+.topsection{
 	display: flex;
 	justify-content: center;
 
+	.titletop{
+		background-color: @title-color;
+		padding: 3%;
+		max-width: 100%;
+	}//this closes titletop
+}//this closes topsection
+
+nav{
+	background-color: @title-color;
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+
+	a {
+		font-family: @text-font;
+		color: white;
+		text-decoration: none;
+		padding: 1% 10%;
+		text-align: center;
+	}//this closes a
+	
+}//this closes nav
+
+.intro{
+	text-align: center
 }
 
-nav a {
-	font-family: @text-font;
-	color: white;
-	text-decoration: none;
-	padding: 2%;
+.intro h2{
+	margin-bottom: 0.5%;
+}
+
+.skills{
+	
+	h2{
 	text-align: center;
+	}
+	
+	ul{
+		.center();
+	}//this closes ul
+}//this closes skills
+
+.work{
+
+	h2{
+	text-align: center;
+	}
+
+	ul{
+	.center();
+	}
 }
+
+footer{
+	background-color: @title-color;
+	padding-top: 1%;
+
+	h2{
+		text-align: center;
+		color: white;
+	}
+
+	.details{
+		display: flex;
+		justify-content: center;
+		justify-content: space-evenly;
+		padding: 1% 0;
+	}
+
+	p{
+		font-size: 1rem;
+		color: white;
+	}
+
+	h3{
+		font-family: @heading-font;
+	}
+}
+
+// @media (max-width: 450px){
+// 	h2{
+// 		background-color: red;
+// 	}
+// } Need to ask about this.  Why does the media query not work.
 
 
 

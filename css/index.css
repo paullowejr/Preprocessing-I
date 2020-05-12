@@ -149,37 +149,96 @@ html,
 body {
   height: 100%;
 }
+img {
+  max-width: 100%;
+}
+section {
+  margin-top: 2%;
+}
+p {
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5rem;
+}
+li {
+  font-family: 'Muli', sans-serif;
+  font-size: 1rem;
+}
 h1 {
   font-family: 'Rakkas', cursive;
   color: white;
   font-size: 5rem;
   text-align: center;
 }
-.titletop {
+h2 {
+  font-family: 'Rakkas', cursive;
+  font-size: 2rem;
+}
+.topsection {
+  display: flex;
+  justify-content: center;
+}
+.topsection .titletop {
   background-color: #CC7150;
   padding: 3%;
-}
-.developer {
-  font-family: 'Muli', sans-serif;
-  color: white;
-}
-.tophead {
-  display: flex;
-  justify-content: center;
+  max-width: 100%;
 }
 nav {
   background-color: #CC7150;
-  padding: 2%;
-  width: 100%;
-}
-nav {
   display: flex;
   justify-content: center;
+  justify-content: space-between;
 }
 nav a {
   font-family: 'Muli', sans-serif;
   color: white;
   text-decoration: none;
-  padding: 2%;
+  padding: 1% 10%;
   text-align: center;
+}
+.intro {
+  text-align: center;
+}
+.intro h2 {
+  margin-bottom: 0.5%;
+}
+.skills h2 {
+  text-align: center;
+}
+.skills ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin-left: 2%;
+}
+.work h2 {
+  text-align: center;
+}
+.work ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin-left: 2%;
+}
+footer {
+  background-color: #CC7150;
+  padding-top: 1%;
+}
+footer h2 {
+  text-align: center;
+  color: white;
+}
+footer .details {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 1% 0;
+}
+footer p {
+  font-size: 1rem;
+  color: white;
+}
+footer h3 {
+  font-family: 'Rakkas', cursive;
 }
